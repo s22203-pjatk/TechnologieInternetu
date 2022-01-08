@@ -1,0 +1,372 @@
+body
+{
+    background-color: #ececec;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#main_logo
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+#sticky_nav
+{   
+    background-color: #ececec;
+    width: 100%;
+	padding: 10px 0;
+    text-align: center;
+    margin: 0px;
+}
+
+    .sticky
+    {
+        width: 100%;
+        position: fixed;
+        left: 0;      
+        top: 0;
+        z-index: 100;
+    }
+
+#side_logo
+{
+    height: 40px;
+    position: absolute;
+    display: block;
+    margin-left: 12px;
+}
+
+ol
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    height: 40px;
+    line-height: 200%;
+    display: inline-block;
+}
+
+    ol a
+    {
+        color: #0a0a0a;
+        text-decoration: none;
+        display: block;
+    }
+
+    ol > li
+    {
+        float: left;
+        width: 185px;
+        height: 40px;
+        border-right: 1px solid #0a0a0a;
+    }
+
+    ol > li:first-child
+    {
+        border-left: 1px solid #0a0a0a;
+    }
+
+    ol > li:hover
+    {
+        background-image: url(img/hixs_pattern_evolution.png);
+    }
+
+    ol > li a:hover
+    {
+        color: #ececec;
+    }
+
+main
+{   
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container
+{
+    height: 550px;
+    background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)
+        ),
+        url(img/rozrzadAudi.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* header h1 */
+        color: #ececec;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+}
+
+#sub_container
+{
+    margin:0;
+    padding:0;
+    text-align: center;
+    color: #ececec;
+}
+
+.sub_container_1
+{   
+    height: 110px;
+    background-image: url(img/hixs_pattern_evolution.png);
+}
+
+    .sub_container_1 > div
+    {
+        
+        padding-top: 33px;
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+.sub_container_2
+{
+    height: 590px;
+    background-color: #c0c0c0;
+}
+
+    .content
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0;
+    }
+
+        .contentL
+        {
+            
+            padding-top: 30px;
+            width: 140px;
+            float: left;
+            padding-right: 10px;
+        }
+
+        .contentR
+        {   
+            width: 600px;
+            text-align: justify;
+            color: #0a0a0a;
+            float: left;
+        }
+
+            .contentR > h1
+            {
+                text-transform: uppercase;
+            }
+
+.sub_container_4
+{
+    height: 250px;
+    background-color: #5c5c5c;
+}
+
+.title
+{
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding: 40px 0;
+}
+
+.button 
+{
+    border-radius: 4px;
+    background-color: #ececec;
+    border: none;
+    color: #111111;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 2px;
+    padding: 20px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+  
+    .button span
+    {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.6s;
+    }
+    
+    .button span:after 
+    {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+    
+        .button:hover span 
+        {
+            padding-right: 25px;
+        }
+        
+        .button:hover span:after 
+        {
+            opacity: 1;
+            right: 0;
+        }
+
+.sub_container_5
+{
+    height: 300px;
+    background-color: #111111;
+}
+
+    .upfooter
+    {
+        padding-top:80px;
+        font-size: 18px;
+    }
+
+        ul
+        {
+            list-style-type: none;
+            display: table; 
+            margin: 0 auto;
+            padding: 0px;
+        }
+
+        ul > li
+        {
+            float: left;
+            width: 250px;
+            height: 40px;
+        }
+
+        ul > li > ul
+        {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+            .glowa
+            {
+                font-size: 23px;
+                font-weight: 700;
+            }
+
+            .glowa > a
+            {
+                text-decoration: none;
+                color: #ececec;
+            }
+
+            .glowa > a:hover
+            {
+                color: #777777;
+            }
+
+footer
+{    
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #111111;
+    text-align: center;
+}
+
+    .border_box
+    {
+        margin-left: auto;
+        margin-right: auto;
+        width: 700px;
+        border: 1px solid #ececec;
+    }
+    .box
+    {   
+        color: #ececec;
+        letter-spacing: 5px;
+        font-size: 15px;
+        padding: 20px 0;
+    }
+
+/****************************************************************************************/
+
+.sub_container_6
+{
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    height: 110px;
+    background-image: url(img/hixs_pattern_evolution.png);
+}
+
+    .sub_container_6 > div
+    {
+        padding-top: 30px;
+    }
+
+.sub_container_7
+{
+    height: 940px;
+    background-color: #5c5c5c;
+}
+
+    .sub_container_7 > .content > .contentR
+    {
+        color: #ececec;
+    }
+
+.sub_container_8
+{
+    background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.5), 
+          rgba(0, 0, 0, 0.5)
+        ),
+        url(img/fiaciorSrodek.jpg);
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/****************************************************************************************/
+
+.sub_container_9
+{
+    height: 500px;
+    background-color: #c0c0c0;
+}
+
+    .sub_container_9 > .content:first-child
+    {
+        padding-top: 22px;
+    }
+
+    .sub_container_9 > .content > .contentR
+    {
+        width: 370px;
+    }
+
+    .sub_container_9 > .content:first-child > .contentR > h1
+    {
+        text-align: left;
+    }
